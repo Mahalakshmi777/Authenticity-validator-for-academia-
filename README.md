@@ -101,7 +101,7 @@ Priyanka S	  21ECE0345	  CSE        BE
 
 4.Enhanced OCR: Support more languages and file formats for wider usability.
 
-
+https://github.com/user-attachments/assets/c822fd33-aa9a-47fd-b014-77b7b09cd245
 
 Team Members: Brindha M
               Dharshini M
