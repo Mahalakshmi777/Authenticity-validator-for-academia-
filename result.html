@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Verification Result</h1>
+    <p><strong>Status:</strong>
+      <span style="color: {% if result.status.startswith('Original') %}green{% else %}red{% endif %}">
+        {{ result.status }}
+      </span>
+    </p>
+
+    <h3>Extracted Fields</h3>
+    <ul>
+      <li>Registration No: {{ extracted.reg_no or "Not found" }}</li>
+      <li>Name: {{ extracted.name or "Not found" }}</li>
+      <li>Department (detected): {{ extracted.department or "Not found" }}</li>
+    </ul>
+
+    <h3>Reasons / Diagnostic</h3>
+    <ul>
+      {% for r in result.reasons %}
+        <li>{{ r }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if result.db_record %}
+      <h3>DB record</h3>
+      <pre>{{ result.db_record }}</pre>
+    {% endif %}
+
+    <h3>Full OCR text</h3>
+    <pre>{{ text }}</pre>
+
+    <a href="{{ url_for('home') }}">Verify another</a>
+    <br><a href="{{ url_for('admin') }}">Admin - add student</a>
+  </div>
+</body>
+</html>
