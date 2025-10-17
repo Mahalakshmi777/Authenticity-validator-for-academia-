@@ -103,11 +103,11 @@ Priyanka S	  21ECE0345	  CSE        BE
 
 https://github.com/user-attachments/assets/c822fd33-aa9a-47fd-b014-77b7b09cd245
 
-Team Members: Brindha M
-              Dharshini M
-              Indhumadhi P
-              Mahalakshmi N
-              Priyanka S
+Team Members: Brindha M,
+              Dharshini M,
+              Indhumadhi P,
+              Mahalakshmi N,
+              Priyanka S 
 
 
 🏁 Conclusion
